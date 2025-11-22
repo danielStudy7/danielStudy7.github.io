@@ -3,12 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <title>Firmenhistorie</title>
-        <link rel="icon" href="/ressource/img/logo.png">
+        <link rel="icon" href="/ressource/img/favicon3.svg">
+        <link rel="stylesheet" href="/src/styles/style.css"
         <meta name="viewport" content= "width=device-width, initial-scale=1.0">
     </head>
     <body>
         <!---Header-->
-        <div>
+        <div class="header">
             <img class="logo" src="/ressource/img/logo.png">
             <p>Rheinwerk</p>
             <p>E-Mobility GmbH</p>
@@ -17,157 +18,197 @@
 
         <!---Über uns-->
         <div class="container">
-            <h2>Über uns</h2>
-            <img src="/ressource/img/building.jpg">
-            <p>Die Rheinwerk E-Mobility GmbH ist ein Kölner Softwareunternehmen, das seit 2014 digitale Lösungen für das Laden, Betreiben und Optimieren von Elektroflotten entwickelt. Unsere Kernprodukte sind ein Lade- und Lastemanagement sowie eine Flottenplattform mit Modulen für Routenplanung, Abrechnung, CO2-Bilanzierung und vorausschauende Wartung. Wir glauben an lokale Verwurzelung, offene Schnittstellen und pragmatische Innovation: nachhaltig, sicher, skalierbar.</p>
+            <div class="image-container">
+                <div class="text-companyName">
+                    <h2>Rheinwerk E-Mobility GmbH</h2>
+                    <h3>Mehr Reichweite durch klare Software.</h3>
+                    <p>Die Rheinwerk E-Mobility GmbH ist ein Kölner Softwareunternehmen, das seit 2014 digitale Lösungen für das Laden, Betreiben und Optimieren von Elektroflotten entwickelt. Unsere Kernprodukte sind ein Lade- und Lastemanagement sowie eine Flottenplattform mit Modulen für Routenplanung, Abrechnung, CO2-Bilanzierung und vorausschauende Wartung. Wir glauben an lokale Verwurzelung, offene Schnittstellen und pragmatische Innovation: nachhaltig, sicher, skalierbar.</p>
+                </div>
+                <div>
+                    <img src="/ressource/img/building.jpg">
+                </div>
+            </div>
+
+            <!---Kennzahlen-->
+            <div class="container">
+                <div class="card">
+                    <div class="card-count">
+                        <p>68</p>
+                    </div>
+                    <div class="card-highlightText">
+                        <p>Mitarbeiter</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-count">
+                        <p>~1,2 Mio.</p>
+                    </div>
+                    <div class="card-highlightText">
+                        <p>Codezeilen</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-count">
+                        <p>3</p>
+                    </div>
+                    <div class="card-highlightText">
+                        <p>Standorte</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-count">
+                        <p>120+</p>
+                    </div>
+                    <div class="card-highlightText">
+                        <p>Projekte</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <!---Kennzahlen-->
-        <div class="container">
-            <div class="card">
-                <p>68</p>
-                <p>Mitarbeiter</p>
-            </div>
-            <div class="card">
-                <p>~1,2 Mio.</p>
-                <p>Codezeilen</p>
-            </div>
-            <div class="card">
-                <p>3</p>
-                <p>Standorte</p>
-            </div>
-            <div class="card">
-                <p>120+</p>
-                <p>Projekte</p>
-            </div>
-        </div>
-
-        <!---Historie--->
-        <div class="container">
-            <h2>Historie</h2>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2014</p>
-                </div>
-                <div>
-                    <p>Idee und Gründung</p>
-                    <p>Drei E-Mobilitäts-Enthusiasten aus Köln entwickeln ein Lastmanagement-Prototyp („ChargeOS-alpha“). Gründung der Rheinwerk E-Mobility UG.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2015</p>
-                </div>
-                <div>
-                    <p>Gewerbeanmeldung & erster Pilot</p>
-                    <p>Offizielle Gewerbeanmeldung, Pilot mit einem lokalen Lieferdienst (10 E-Transporter, 12 AC-Ladepunkte).</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2016</p>
-                </div>
-                <div>
-                    <p>GmbH & Seed-Finanzierung</p>
-                    <p>Umfirmierung in GmbH, Seed-Runde (Business Angels). Aufbau eines dedizierten Backend-Teams, Einführung API-First.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2017</p>
-                </div>
-                <div>
-                    <p>Erster Großkunde Logistik</p>
-                    <p>Roll-out bei einem regionalen Paketlogistiker (80 Fahrzeuge, 60 Ladepunkte), Start 24/7-Support.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2018</p>
-                </div>
-                <div>
-                    <p>Zertifizierung & Skalierung</p>
-                    <p>ISO 9001-Einführung, SOC2-Roadmap beschlossen. Kubernetes-Migration, Mandantenfähigkeit für Enterprise.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2019</p>
-                </div>
-                <div>
-                    <p>Büroerweiterung Köln & erstes Projektbüro Münster</p>
-                    <p>Fokus auf Interoperabilität (OCPP 1.6), Launch Self-Service-Portal für Depotleiter.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2020</p>
-                </div>
-                <div>
-                    <p>Remote-Jahr & Produkt „FleetPilot“</p>
-                    <p>Pandemiebedingt Remote-First. Markteinführung FleetPilot (Telemetrie, Routen, Energiemonitoring).</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2021</p>
-                </div>
-                <div>
-                    <p>GDACH-Expansion & OCPP 2.0.1</p>
-                    <p>Erste Projekte in Österreich/Schweiz, Unterstützung OCPP 2.0.1, Start Partnernetzwerk mit Installationsbetrieben.</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2022</p>
-                </div>
-                <div>
-                    <p>Nachhaltigkeitsmodul & CO₂-Bilanz</p>
-                    <p>Modul zur CO₂-Erfassung/-Bilanzierung, Go-Live Energiepreis-Forecasting (Day-Ahead-Börsendaten).</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2023</p>
-                </div>
-                <div>
-                    <p>50+ Mitarbeitende & Sicherheitsfokus</p>
-                    <p>Security-Team, Rolling Key Rotation, Pen-Tests. Erste kommunale Flotten (Stadtwerke).</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2024</p>
-                </div>
-                <div>
-                    <p>Schnellladen & Lastspitzen-KI</p>
-                    <p>DC-Schnellladen (150 kW+) mit Peak-Shaving. Erste Campus-Microgrid-Integration (PV + Speicher).</p>
-                </div>
-            </div>
-            <div class="historyEntry">
-                <div class="year">
-                    <p>2025</p>
-                </div>
-                <div>
-                    <p>Prädiktive Wartung & Europa-Ready</p>
-                    <p>Einführung Predictive Maintenance (Anomalieerkennung an Ladepunkten/Fahrzeugen). Lokalisierungen für NL/FR. 14.500 verwaltete Ladepunkte.</p>
-                </div>
-            </div>
+        <!---Historie als ul implementieren und stylen--->
+        <h2>Historie</h2>
+        <div class="history-container">
+            <ul>
+                <li>
+                    <div class="box">
+                        <h3>2014 - Idee und Gründung</h3>
+                        <p>Drei E-Mobilitäts-Enthusiasten aus Köln entwickeln ein Lastmanagement-Prototyp („ChargeOS-alpha“). Gründung der Rheinwerk E-Mobility UG.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2015 - Gewerbeanmeldung & erster Pilot</h3>
+                        <p>Offizielle Gewerbeanmeldung, Pilot mit einem lokalen Lieferdienst (10 E-Transporter, 12 AC-Ladepunkte).</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2016 - GmbH & Seed-Finanzierung</h3>
+                        <p>Umfirmierung in GmbH, Seed-Runde (Business Angels). Aufbau eines dedizierten Backend-Teams, Einführung API-First.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2017 - Erster Großkunde Logistik</h3>
+                        <p>Roll-out bei einem regionalen Paketlogistiker (80 Fahrzeuge, 60 Ladepunkte), Start 24/7-Support.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2018 - Zertifizierung & Skalierung</h3>
+                        <p>ISO 9001-Einführung, SOC2-Roadmap beschlossen. Kubernetes-Migration, Mandantenfähigkeit für Enterprise.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2019 - Büroerweiterung Köln & erstes Projektbüro Münster</h3>
+                        <p>Fokus auf Interoperabilität (OCPP 1.6), Launch Self-Service-Portal für Depotleiter.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2020 - Remote-Jahr & Produkt „FleetPilot“</h3>
+                        <p>Pandemiebedingt Remote-First. Markteinführung FleetPilot (Telemetrie, Routen, Energiemonitoring).</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2021 - GDACH-Expansion & OCPP 2.0.1</h3>
+                        <p>Erste Projekte in Österreich/Schweiz, Unterstützung OCPP 2.0.1, Start Partnernetzwerk mit Installationsbetrieben.</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2022 - Nachhaltigkeitsmodul & CO₂-Bilanz</h3>
+                        <p>Modul zur CO₂-Erfassung/-Bilanzierung, Go-Live Energiepreis-Forecasting (Day-Ahead-Börsendaten).</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2023 - 50+ Mitarbeitende & Sicherheitsfokus</h3>
+                        <p>Security-Team, Rolling Key Rotation, Pen-Tests. Erste kommunale Flotten (Stadtwerke).</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>2024 - Schnellladen & Lastspitzen-KI</h3>
+                        <p>DC-Schnellladen (150 kW+) mit Peak-Shaving. Erste Campus-Microgrid-Integration (PV + Speicher).</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <h3>Prädiktive Wartung & Europa-Ready</h3>
+                        <p>Einführung Predictive Maintenance (Anomalieerkennung an Ladepunkten/Fahrzeugen). Lokalisierungen für NL/FR. 14.500 verwaltete Ladepunkte.</p>
+                    </div>
+                </li>
+            </ul>
         </div>
 
         <!---Das Team-->
+        <h2>Das Team</h2>
         <div class="container">
-            <h2>Das Team</h2>
+            <div class="card">
+                <div class="card-picture">
+                    <img src="/ressource/img/placeholder.jpg"/>
+                </div>
+                <div class="card-highlightText">
+                    <p>Maximilian</p>
+                    <p>CEO</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-picture">
+                    <img src="/ressource/img/placeholder.jpg"/>
+                </div>
+                <div class="card-highlightText">
+                    <p>Paul</p>
+                    <p>CTPO</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-picture">
+                    <img src="/ressource/img/placeholder.jpg"/>
+                </div>
+                <div class="card-highlightText">
+                    <p>Peter</p>
+                    <p>Head of Product</p>
+                </div>
+            </div>
         </div>
 
         <!---Produkte-->
+        <h2>Produkte</h2>
         <div class="container">
-            <h2>Produkte</h2>
+            <div class="card">
+                <div class="card-product">
+                    <p>Das Betriebssystem fürs Laden: verteilt Leistung dynamisch auf AC/DC-Ladepunkte, verhindert Lastspitzen und hält OCPP-Hardware zentral unter Kontrolle. Integriert PV/Batterie, Tarife und Abrechnung – skalierbar vom Depot bis zum Campus.</p>
+                </div>
+                <div class="card-highlightText">
+                    <p>ChargeOS</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-product">
+                    <p>Alle Fahrzeugdaten an einem Ort: SoC, Routen, Ladefenster und Wartung im Blick. Mit Reichweitenmodellen, Einsatzplanung und Predictive Maintenance senkt FleetPilot Kosten und erhöht die Einsatzzeit deiner E-Flotte.</p>
+                </div>
+                <div class="card-highlightText">
+                    <p>FleetPilot</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-product">
+                    <p>Unsere Edge-Software für stabile Standorte: lokales Regelwerk, Offline-Fallback und geringe Latenz direkt am Standort. Läuft auf Standard-Industrie-Hardware und synchronisiert sicher mit der Cloud.</p>
+                </div>
+                <div class="card-highlightText">
+                    <p>Rheinwerk Edge</p>
+                </div>
+            </div>
         </div>
 
         <!---Quiz-->
+        <h2>Quiz</h2>
         <div class="container">
-            <h2>Quiz</h2>
         </div>
 
         <!---Schlussteil-->

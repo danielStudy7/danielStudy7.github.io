@@ -13,16 +13,18 @@
     padding: 0;
 }
 
-html, body {
+html {
     font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
     background: radial-gradient(circle at top, #1f4da3 0, #0b2a63 55%);
+}
 
+body {
     padding: 0 2rem;
 }
 
 h1, h2, h3, p {
     color: var(--electricLime);
-    padding: 1rem;
+    padding: 0rem 1rem 1rem;
 }
 
 img {
@@ -102,6 +104,18 @@ button:hover {
     color: var(--electricLime);
 }
 
+@media screen and (max-width: 600px) {
+    .container {
+        /* display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr; */
+
+        display: flex;
+        flex-wrap: wrap;
+        flex:100%;
+    }
+}
+
 /* image container with text*/
 .image-container {
     display: flex;
@@ -109,12 +123,28 @@ button:hover {
     justify-content: center;
     align-items: center;
 
-    padding: 1rem;
     padding-top: 7rem;
+}
+
+@media screen and (max-width: 600px) {
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .image-container div {
+        flex: 100%;
+    }
 }
 
 .text-companyName {
     text-align: left;
+}
+
+@media screen and (max-width: 600px) {
+    .text-companyName {
+        flex: 100%;
+    }
 }
 
 .text-companyName h2 span {
@@ -162,6 +192,12 @@ button:hover {
     text-align: center;
 
     margin: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
 }
 
 .card-count {
@@ -230,6 +266,19 @@ button:hover {
     padding-bottom: 50px;
 }
 
+@media (max-width: 971px) {
+    .history-container ul li {
+        list-style: none;
+        position: relative;
+
+        width: 2px;
+        margin: 0;
+        padding-bottom: 50px;
+
+        background: var(--electricLime);
+    }
+}
+
 /*Dots*/
 .history-container ul li::before {
     position: absolute;
@@ -253,11 +302,17 @@ button:hover {
     left: -29rem;
 }
 
+@media (max-width: 971px) {
+    .history-container ul li:nth-child(odd) div {
+        left: 2rem;
+    }
+}
+
 .history-container ul li div {
     position: relative;
 
     bottom: 0;
-    width: 400px;
+    width: 25rem;
 
     background: radial-gradient(circle at bottom right, #9be000 0, #d1ea6c 53%);
     left: 2rem;
@@ -269,6 +324,15 @@ button:hover {
     -o-border-radius: 1rem;
 
     padding: 1rem;
+}
+
+@media (max-width: 971px) {
+    .history-container ul li div {
+        position: relative;
+        bottom: 0;
+        padding: 1rem;
+        left: 2rem;
+    }
 }
 
 .history-container ul li div h3, p {

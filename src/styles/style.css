@@ -146,10 +146,10 @@ button:hover {
 .card {
     display: grid;
     grid-template-rows: 2fr;
-    min-width: 300px;
-    max-width: 350px;
-    min-height: 250px;
-    max-height: 450px;
+    min-width: 20vh;
+    max-width: 27vh;
+    min-height: 20vh;
+    max-height: 40vh;
 
     background: radial-gradient(circle at bottom right, #0b2a63 0, #1f4da3 55%);
 
@@ -175,13 +175,29 @@ button:hover {
     padding: 1rem;
 }
 
+.card-picture img {
+    width: fit-content;
+
+    border-radius: 0rem;
+    -webkit-border-radius: 0rem;
+    -moz-border-radius: 0rem;
+    -ms-border-radius: 0rem;
+    -o-border-radius: 0rem;
+
+    padding: 1rem;
+}
+
 .card-highlightText {
-    color: var(--electricLime);
     font-size: 2em;
 
     border-top: solid;
+    color: var(--electricLime);
 
     padding: 1rem;
+}
+
+.card-highlightText p span {
+    font-size: 0.75em;
 }
 
 .card-product {

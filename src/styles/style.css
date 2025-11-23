@@ -1,3 +1,4 @@
+/* default tags start */
 :root {
     --primary: #1f4da3;
     --secondary: #0f6a6a;
@@ -54,6 +55,11 @@ button:hover {
     background: radial-gradient(circle at bottom right, #0f6a6a 0, #9be000 80%);
 }
 
+/* default tags end */
+
+/* classes start */
+
+/* header */
 .header {
       position: fixed;
       top: 12px;
@@ -81,6 +87,7 @@ button:hover {
     width: 12px;
 }
 
+/* container */
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -95,6 +102,7 @@ button:hover {
     color: var(--electricLime);
 }
 
+/* image container with text*/
 .image-container {
     display: flex;
 
@@ -125,6 +133,7 @@ button:hover {
     width: 50%;
 }
 
+/* card container */
 .card-container {
     display: flex;
     flex-wrap: wrap;
@@ -234,7 +243,7 @@ button:hover {
     bottom: 0;
     width: 400px;
 
-    background: radial-gradient(circle at bottom right, #1d1f23 0, #64748b 95%);
+    background: radial-gradient(circle at bottom right, #9be000 0, #d1ea6c 53%);
     left: 2rem;
 
     border-radius: 1rem;
@@ -245,3 +254,9 @@ button:hover {
 
     padding: 1rem;
 }
+
+.history-container ul li div h3, p {
+    color: var(--neutralMarine);
+}
+
+/* classes end */

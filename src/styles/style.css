@@ -49,7 +49,6 @@ button {
     -ms-border-radius: 1rem;
     -o-border-radius: 1rem;
 
-    margin: 1rem;
     padding: 1rem;
 }
 
@@ -254,9 +253,6 @@ button:hover {
 }
 
 /*History*/
-.history-container {
-    padding: 1rem;
-}
 
 .history-container ul li {
     list-style: none;

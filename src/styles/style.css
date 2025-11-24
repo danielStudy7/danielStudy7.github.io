@@ -110,11 +110,6 @@ button:hover {
     padding-top: 3rem;
 }
 
-/*TODO: Entfernen, weil das nicht benötigt wird*/
-.container p {
-    color: var(--electricLime);
-}
-
 @media screen and (max-width: 600px) {
     .container {
         display: flex;

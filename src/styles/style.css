@@ -102,6 +102,15 @@ button:hover {
     justify-content: center;
 }
 
+.container .card-container {
+    align-items: stretch;
+
+    min-height: auto;
+
+    padding-top: 3rem;
+}
+
+/*TODO: Entfernen, weil das nicht benötigt wird*/
 .container p {
     color: var(--electricLime);
 }
@@ -166,6 +175,8 @@ button:hover {
     display: flex;
     flex-wrap: wrap;
 
+    min-height: 100vh;
+
     align-items: center;
     justify-content: center;
 }
@@ -174,10 +185,10 @@ button:hover {
 .card {
     display: grid;
     grid-template-rows: 2fr;
-    min-width: 20vh;
-    max-width: 27vh;
-    min-height: 20vh;
-    max-height: 40vh;
+
+    min-width: 33vh;
+    max-width: 37vh;
+    min-height: 34vh;
 
     background: radial-gradient(circle at bottom right, #0b2a63 0, #1f4da3 55%);
 
@@ -333,7 +344,11 @@ button:hover {
     }
 }
 
-.history-container ul li div h3, p {
+.history-container ul li div h3 {
+    color: var(--neutralMarine);
+}
+
+.history-container ul li div p {
     color: var(--neutralMarine);
 }
 

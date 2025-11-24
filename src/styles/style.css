@@ -27,6 +27,10 @@ h1, h2, h3, p {
     padding: 0rem 1rem 1rem;
 }
 
+section {
+    padding-bottom: 3rem;
+}
+
 img {
     width: 100%;
 

@@ -348,3 +348,55 @@ button:hover {
 }
 
 /* classes end */
+
+/* Animation */
+
+.reveal-from-left {
+    opacity: 0;
+    transform: translateX(-600px);
+    -webkit-transform: translateX(-600px);
+    -moz-transform: translateX(-600px);
+    -ms-transform: translateX(-600px);
+    -o-transform: translateX(-600px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -ms-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -o-transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal-from-right {
+    opacity: 0;
+    transform: translateX(600px);
+    -webkit-transform: translateX(600px);
+    -moz-transform: translateX(600px);
+    -ms-transform: translateX(600px);
+    -o-transform: translateX(600px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -ms-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -o-transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal-from-left.visible {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+
+    animation-duration: 6000ms;
+}
+
+.reveal-from-right.visible {
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+
+    animation-duration: 6000ms;
+}

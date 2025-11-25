@@ -274,7 +274,7 @@ button:hover {
     padding-bottom: 50px;
 }
 
-@media (max-width: 971px) {
+@media screen and (max-width: 971px) {
     .history-container ul li {
         list-style: none;
         position: relative;
@@ -310,7 +310,7 @@ button:hover {
     left: -29rem;
 }
 
-@media (max-width: 971px) {
+@media screen and (max-width: 971px) {
     .history-container ul li:nth-child(odd) div {
         left: 2rem;
     }
@@ -334,7 +334,7 @@ button:hover {
     padding: 1rem;
 }
 
-@media (max-width: 971px) {
+@media screen and (max-width: 971px) {
     .history-container ul li div {
         position: relative;
         bottom: 0;
@@ -357,11 +357,11 @@ button:hover {
 
 .reveal-from-left {
     opacity: 0;
-    transform: translateX(-600px);
-    -webkit-transform: translateX(-600px);
-    -moz-transform: translateX(-600px);
-    -ms-transform: translateX(-600px);
-    -o-transform: translateX(-600px);
+    transform: translateX(-200px);
+    -webkit-transform: translateX(-200px);
+    -moz-transform: translateX(-200px);
+    -ms-transform: translateX(-200px);
+    -o-transform: translateX(-200px);
     transition: opacity 600ms ease-out, transform 600ms ease-out;
     -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
     -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;
@@ -369,13 +369,29 @@ button:hover {
     -o-transition: opacity 600ms ease-out, transform 600ms ease-out;
 }
 
+@media screen and (max-width: 971px) {
+    .reveal-from-left {
+        opacity: 0;
+        transform: translateX(200px);
+        -webkit-transform: translateX(200px);
+        -moz-transform: translateX(200px);
+        -ms-transform: translateX(200px);
+        -o-transform: translateX(200px);
+        transition: opacity 600ms ease-out, transform 600ms ease-out;
+        -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
+        -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;
+        -ms-transition: opacity 600ms ease-out, transform 600ms ease-out;
+        -o-transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+}
+
 .reveal-from-right {
     opacity: 0;
-    transform: translateX(600px);
-    -webkit-transform: translateX(600px);
-    -moz-transform: translateX(600px);
-    -ms-transform: translateX(600px);
-    -o-transform: translateX(600px);
+    transform: translateX(200px);
+    -webkit-transform: translateX(200px);
+    -moz-transform: translateX(200px);
+    -ms-transform: translateX(200px);
+    -o-transform: translateX(200px);
     transition: opacity 600ms ease-out, transform 600ms ease-out;
     -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
     -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;

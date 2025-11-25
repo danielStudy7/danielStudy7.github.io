@@ -258,6 +258,10 @@ button:hover {
 
 /*History*/
 
+.history-container {
+    overflow-x: hidden;
+}
+
 .history-container ul li {
     list-style: none;
     position: relative;
@@ -398,5 +402,29 @@ button:hover {
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
 
+    animation-duration: 6000ms;
+}
+
+.reveal-from-down {
+    opacity: 0;
+    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+    -moz-transform: translateY(200px);
+    -ms-transform: translateY(200px);
+    -o-transform: translateY(200px);
+    transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -webkit-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -moz-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -ms-transition: opacity 600ms ease-out, transform 600ms ease-out;
+    -o-transition: opacity 600ms ease-out, transform 600ms ease-out;
+}
+
+.reveal-from-down.visible {
+    opacity: 1;
+    transform: translateY(0px);
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
     animation-duration: 6000ms;
 }

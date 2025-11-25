@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const elementsLeft = document.querySelectorAll(".reveal-from-left");
     const elementsRight = document.querySelectorAll(".reveal-from-right");
+    const elementsDown = document.querySelectorAll(".reveal-from-down");
 
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
     elementsLeft.forEach(el => observer.observe(el));
     elementsRight.forEach(el => observer.observe(el));
+    elementsDown.forEach(el => observer.observe(el));
 })

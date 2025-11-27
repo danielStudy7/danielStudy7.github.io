@@ -22,6 +22,10 @@ body {
     padding: 0 0rem;
 }
 
+section {
+    padding-bottom: 5rem;
+}
+
 h1, h2, h3, p {
     color: var(--electricLime);
     padding: 0rem 1rem 1rem;
@@ -30,10 +34,6 @@ h1, h2, h3, p {
 p {
     color: var(--electricLime);
     padding: 0rem 0rem 1rem;
-}
-
-section {
-    padding-bottom: 5rem;
 }
 
 img {
@@ -143,20 +143,20 @@ summary:hover {
     margin: 3rem;
 }
 
-.container .card-container {
-    align-items: stretch;
-
-    min-height: auto;
-
-    padding-top: 3rem;
-}
-
 @media screen and (max-width: 600px) {
     .container {
         display: flex;
         flex-wrap: wrap;
         flex:100%;
     }
+}
+
+.container .card-container {
+    align-items: stretch;
+
+    min-height: auto;
+
+    padding-top: 3rem;
 }
 
 /* image container with text*/
@@ -185,14 +185,18 @@ summary:hover {
     width: 50%;
 }
 
-.text-companyName h2 {
-    padding: 0 0 1rem;
-}
-
 @media screen and (max-width: 600px) {
     .text-companyName {
         flex: 100%;
     }
+}
+
+.image-container div {
+    width: 50%;
+}
+
+.text-companyName h2 {
+    padding: 0 0 1rem;
 }
 
 .text-companyName h2 span {
@@ -205,10 +209,6 @@ summary:hover {
 .text-companyName p {
     font-weight: 500;
     color: white;
-}
-
-.image-container div {
-    width: 50%;
 }
 
 .card-container {
@@ -324,10 +324,6 @@ summary:hover {
     justify-content: center;
 
     padding: 1rem;
-}
-
-.text-companyName {
-    width: 50%;
 }
 
 /*History*/
@@ -479,6 +475,7 @@ summary:hover {
 }
 
 @media screen and (max-width: 971px) {
+    /* Verhält sich wie reveal-from-right auf kleinen Bildschirmen */
     .reveal-from-left {
         opacity: 0;
         transform: translateX(200px);

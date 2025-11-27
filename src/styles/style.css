@@ -209,6 +209,13 @@ summary:hover {
 .text-companyName p {
     font-weight: 500;
     color: white;
+    padding-right: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .text-companyName p {
+        padding-right: 0;
+    }
 }
 
 .card-container {

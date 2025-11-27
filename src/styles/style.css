@@ -62,11 +62,29 @@ button {
 }
 
 button:hover {
-    background: radial-gradient(circle at bottom right, #0f6a6a 0, #9be000 80%);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.8);
 }
 
 audio {
     width: 100%;
+}
+
+summary {
+    background: radial-gradient(circle at bottom right, #0b2a63 0, #1f4da3 55%);
+    color: var(--electricLime);
+
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+summary:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
 }
 
 /* default tags end */
@@ -403,6 +421,8 @@ audio {
 
 .history-container ul li div h3 {
     color: var(--neutralMarine);
+
+    padding: 0 0 1rem;
 }
 
 .history-container ul li div p {

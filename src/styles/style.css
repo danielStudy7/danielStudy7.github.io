@@ -19,12 +19,17 @@ html {
 }
 
 body {
-    padding: 0 2rem;
+    padding: 0 0rem;
 }
 
 h1, h2, h3, p {
     color: var(--electricLime);
     padding: 0rem 1rem 1rem;
+}
+
+p {
+    color: var(--electricLime);
+    padding: 0rem 0rem 1rem;
 }
 
 section {
@@ -74,28 +79,37 @@ audio {
     top: 12px;
     left: 50%;
     transform: translateX(-50%);
-    width: min(1120px, 100% - 32px);
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    width: 60%;
+    min-height: 4rem;
+    max-height: 5rem;
     z-index: 900;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: left;
     font-weight: 600;
-
     background: radial-gradient(circle at top left, #9be000 0, #d1ea6c 80%);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
-
-    border-radius: 50px;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-
-    padding: 1rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
 }
 
 .header img {
     width: 12px;
+
+    padding: 3rem;
+}
+
+.header p {
+    color: var(--neutralMarine);
+
+    padding: 3rem;
 }
 
 /* container */
@@ -107,6 +121,8 @@ audio {
 
     align-items: center;
     justify-content: center;
+
+    margin: 3rem;
 }
 
 .container .card-container {
@@ -151,6 +167,10 @@ audio {
     width: 50%;
 }
 
+.text-companyName h2 {
+    padding: 0 0 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .text-companyName {
         flex: 100%;
@@ -191,6 +211,8 @@ audio {
 
     align-items: center;
     justify-content: center;
+
+    margin: 3rem;
 }
 
 .video-container video {
@@ -294,6 +316,8 @@ audio {
 
 .history-container {
     overflow-x: hidden;
+
+    margin: 3rem;
 }
 
 .history-container ul li {
@@ -383,6 +407,37 @@ audio {
 
 .history-container ul li div p {
     color: var(--neutralMarine);
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    height: 30vh;
+
+    background: var(--primary);
+    color: var(--electricLime);
+}
+
+.footer div {
+    width: 35%;
+
+    padding: 3rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+@media screen and (max-width: 718px) {
+    .footer {
+        flex: 100%;
+    }
+
+    .footer div {
+        width: 100%;
+    }
 }
 
 /* classes end */

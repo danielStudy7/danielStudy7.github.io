@@ -36,6 +36,14 @@ p {
     padding: 0rem 0rem 1rem;
 }
 
+a {
+    color: var(--electricLime);
+}
+
+a:visited {
+    color: #79ad00;
+}
+
 img {
     width: 100%;
     border-radius: 1rem;

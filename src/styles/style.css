@@ -66,7 +66,6 @@ button {
     -o-border-radius: 1rem;
 
     padding: 1rem;
-    margin: 1rem;
 }
 
 button:hover {
@@ -127,7 +126,7 @@ summary:hover {
 }
 
 .header img {
-    width: 12px;
+    width: 24px;
 
     padding: 3rem;
 }
@@ -136,6 +135,35 @@ summary:hover {
     color: var(--neutralMarine);
 
     padding: 3rem;
+}
+
+@media screen and (max-width:600px) {
+    .header {
+        position: fixed;
+        top: 12px;
+        left: 50%;
+        width: 80%;
+        min-height: 4rem;
+        max-height: 5rem;
+        z-index: 900;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        font-weight: 600;
+        background: radial-gradient(circle at top left, #9be000 0, #d1ea6c 80%);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8);
+        border-radius: 3rem;
+        -webkit-border-radius: 3rem;
+        -moz-border-radius: 3rem;
+        -ms-border-radius: 3rem;
+        -o-border-radius: 3rem;
+    }
+
+    .header p {
+        color: var(--neutralMarine);
+
+        padding: 1rem;
+    }
 }
 
 /* container */
@@ -398,6 +426,7 @@ summary:hover {
     position: relative;
 
     bottom: 0;
+
     width: 25rem;
 
     background: radial-gradient(circle at bottom right, #9be000 0, #d1ea6c 53%);
@@ -418,6 +447,8 @@ summary:hover {
         bottom: 0;
         padding: 1rem;
         left: 2rem;
+
+        max-width: 12rem;;
     }
 }
 
@@ -484,7 +515,7 @@ summary:hover {
     /* Verhält sich wie reveal-from-right auf kleinen Bildschirmen */
     .reveal-from-left {
         opacity: 0;
-        
+
         transform: translateX(200px);
         -webkit-transform: translateX(200px);
         -moz-transform: translateX(200px);
